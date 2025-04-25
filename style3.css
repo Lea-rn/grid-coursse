@@ -1,0 +1,30 @@
+body {
+    margin: 0px;
+}
+
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 600px 100px;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "myheder myheder myheder myheder"
+      "mymain mymain . mysaid"
+      "myfooter myfooter myfooter myfooter";
+
+      text-align: center;
+  }
+  
+  .myheder { grid-area: myheder;
+
+background-color: aqua;}
+  
+  .mymain { grid-area: mymain;
+background-color: red; }
+  
+  .mysaid { grid-area: mysaid; 
+background-color: greenyellow;}
+  
+  .myfooter { grid-area: myfooter; 
+background-color: aqua;}
+  

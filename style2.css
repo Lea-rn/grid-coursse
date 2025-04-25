@@ -1,0 +1,72 @@
+body {
+    margin: 0px;
+    background-color: black;
+    color: white;
+}
+
+.container {
+border: solid 2px red;
+
+text-align: center;
+display: grid;
+grid-template-areas: 
+"  myHeader    myHeader   myHeader     myHeader   "
+"   mymain      mymain        .           myside  "
+"  myfooter     myfooter    myfooter      myfooter "
+;
+
+grid-template-rows: 100px 500px 100px;
+
+}
+
+
+.child1{
+    grid-area: myHeader;
+}
+
+.child2 {
+    grid-area: mymain;
+}
+
+.child3 {
+    grid-area: myside;
+}
+
+footer {
+    grid-area: myfooter;
+}
+
+
+
+
+header {
+
+    padding: 20px;
+    background-color: rgb(43, 31, 148);
+
+
+
+}
+main {
+
+    padding: 20px;
+    background-color: rgb(156, 29, 29);
+
+
+}
+
+aside {
+
+    padding: 20px;
+    background-color: rgb(28, 176, 15);
+
+
+}
+
+footer {
+
+    padding: 20px;
+    background-color: rgb(24, 142, 136);
+  
+  
+}
